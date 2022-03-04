@@ -184,11 +184,11 @@ public class CategoriasProductos extends javax.swing.JInternalFrame {
         ps=conn.cadena.prepareStatement(consultaSQL);
         ps.setString(1,txtColoresNombre.getText().trim());
         ps.setString(2, txtDescripcion.getText().trim());
-        ps.setInt(3, (CmbBoxCantidad.getSelectedIndex())); //Aqui puede valer pito
+        ps.setInt(3, (CmbBoxCantidad.getSelectedIndex())); 
         ps.setString(4, txtFormaColores.getText().trim());
         ps.setBoolean(5, CboxDescuento.isSelected());
         if(CboxDescuento.isSelected())
-           ps.setInt(6, (CmbBoxDescuentos.getSelectedIndex()));  //Aqui puede valer pito
+           ps.setInt(6, (CmbBoxDescuentos.getSelectedIndex())); 
         else
             ps.setInt(6, 0);
         ps.setString(7, "imagencolores.jpg");
